@@ -48,3 +48,10 @@ python scripts/plot_figure3.py
 
 The JSON files were exported from the analysis data used for the manuscript version dated 9 November 2026. They are deliberately flattened into public, dependency-free records so reproducing the plots does not require the original research notebooks or internal software packages.
 
+## Citation
+
+Please cite the archived release of this repository when using these data or
+scripts. Citation metadata, including the complete manuscript author list, is
+provided in `CITATION.cff`; GitHub exposes it through the repository's
+**Cite this repository** menu.
+

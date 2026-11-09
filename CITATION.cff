@@ -1,0 +1,143 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite this repository and the associated manuscript."
+title: "Main-figure data for Resolving Structure in Prethermal Floquet Dynamics with Precision Quantum Computation"
+type: software
+version: 1.0.0
+date-released: 2026-11-09
+repository-code: "https://github.com/Qedma/ibm-qa-main-figures"
+url: "https://github.com/Qedma/ibm-qa-main-figures"
+abstract: >-
+  Numerical data and minimal Python plotting scripts required to reproduce the
+  quantitative panels of the four main figures in the associated manuscript.
+keywords:
+  - quantum computing
+  - Floquet dynamics
+  - error mitigation
+  - reproducibility
+authors:
+  - given-names: Eyal
+    family-names: Leviatan
+    affiliation: Qedma Quantum Computing
+  - given-names: Tasneem
+    family-names: Watad
+    affiliation: Qedma Quantum Computing
+  - given-names: Roy
+    family-names: Perry
+    affiliation: Qedma Quantum Computing
+  - given-names: Shaul
+    family-names: Barkan
+    affiliation: Qedma Quantum Computing
+  - given-names: Lukas
+    family-names: Broers
+    affiliation: RIKEN Center for Computational Science
+  - given-names: Mohammed Zuhair
+    family-names: Mullath
+    affiliation: BlueQubit
+  - given-names: Hidehiko
+    family-names: Kohshiro
+    affiliation: RIKEN
+  - given-names: Ori
+    family-names: Alberton
+    affiliation: Qedma Quantum Computing
+  - given-names: Itai
+    family-names: Arad
+    affiliation: Qedma Quantum Computing
+  - given-names: Yosi
+    family-names: Atia
+    affiliation: Qedma Quantum Computing
+  - given-names: Eyal
+    family-names: Bairey
+    affiliation: Qedma Quantum Computing
+  - given-names: Matan
+    family-names: Ben Dov
+    affiliation: Qedma Quantum Computing
+  - given-names: Asaf
+    family-names: Berkovitch
+    affiliation: Qedma Quantum Computing
+  - given-names: Ewout
+    family-names: van den Berg
+    affiliation: IBM Quantum
+  - given-names: Itsik
+    family-names: Cohen
+    affiliation: Qedma Quantum Computing
+  - given-names: Omri
+    family-names: Golan
+    affiliation: Qedma Quantum Computing
+  - given-names: Ilya
+    family-names: Gurwich
+    affiliation: Qedma Quantum Computing
+  - given-names: Avieli
+    family-names: Haber
+    affiliation: Qedma Quantum Computing
+  - given-names: Barak A.
+    family-names: Katzir
+    affiliation: Qedma Quantum Computing
+  - given-names: Oded
+    family-names: Kenneth
+    affiliation: Qedma Quantum Computing
+  - given-names: Roei
+    family-names: Levi
+    affiliation: Qedma Quantum Computing
+  - given-names: Yotam Y.
+    family-names: Lifshitz
+    affiliation: Qedma Quantum Computing
+  - given-names: Yaron
+    family-names: Lukovsky
+    affiliation: Qedma Quantum Computing
+  - given-names: Ron
+    family-names: Melcer
+    affiliation: Qedma Quantum Computing
+  - given-names: Adiel
+    family-names: Meyer
+    affiliation: Qedma Quantum Computing
+  - given-names: Boris
+    family-names: Muratov
+    affiliation: Qedma Quantum Computing
+  - given-names: Aviad
+    family-names: Panahi
+    affiliation: Qedma Quantum Computing
+  - given-names: Gili
+    family-names: Schul
+    affiliation: Qedma Quantum Computing
+  - given-names: Tali
+    family-names: Shnaider
+    affiliation: Qedma Quantum Computing
+  - given-names: Maor
+    family-names: Shutman
+    affiliation: Qedma Quantum Computing
+  - given-names: Alireza
+    family-names: Seif
+    affiliation: IBM Quantum
+  - given-names: Tomonori
+    family-names: Shirakawa
+    affiliation: RIKEN
+  - given-names: Asif
+    family-names: Sinay
+    affiliation: Qedma Quantum Computing
+  - given-names: Vincent P.
+    family-names: Su
+    affiliation: BlueQubit
+  - given-names: Hayk
+    family-names: Tepanyan
+    affiliation: BlueQubit
+  - given-names: Omri
+    family-names: Trebitch
+    affiliation: Qedma Quantum Computing
+  - given-names: Assaf
+    family-names: Zubida
+    affiliation: Qedma Quantum Computing
+  - given-names: Dorit
+    family-names: Aharonov
+    affiliation: Qedma Quantum Computing and The Hebrew University of Jerusalem
+  - given-names: Hrant
+    family-names: Gharibyan
+    affiliation: BlueQubit
+  - given-names: Abhinav
+    family-names: Kandala
+    affiliation: IBM Quantum
+  - given-names: Seiji
+    family-names: Yunoki
+    affiliation: RIKEN
+  - given-names: Netanel H.
+    family-names: Lindner
+    affiliation: Qedma Quantum Computing and Technion
