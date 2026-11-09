@@ -26,7 +26,7 @@ for key, (label, marker, color) in styles.items():
     if not method or not method.get("points"):
         continue
     x_key, y_key = method["x_key"], method["y_key"]
-    points = [point for point in method["points"] if point.get("feasible", True)]
+    points = method["points"]
     ax.plot(
         [point[x_key] for point in points],
         [point[y_key] for point in points],

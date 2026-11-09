@@ -1,6 +1,5 @@
 {
   "description": "Numerical data for Figure 2b-i. Figure 2a and 2c are circuit/system schematics.",
-  "scan_cycle": 30,
   "selected_parameters": {
     "theta_x": 1.5657,
     "theta_z": 0.3388,
@@ -15506,9 +15505,6 @@
   "dynamics": [
     {
       "name": "selected_point",
-      "theta_x": 1.5657,
-      "theta_z": 0.3388,
-      "theta_zz": 1.0472,
       "cycles": [
         0,
         1,
@@ -15671,9 +15667,6 @@
     },
     {
       "name": "zero_longitudinal_field",
-      "theta_x": 1.5657,
-      "theta_z": 0.0,
-      "theta_zz": 1.0472,
       "cycles": [
         0,
         1,
@@ -15833,9 +15826,6 @@
     },
     {
       "name": "strongly_entangling",
-      "theta_x": 1.6535,
-      "theta_z": 1.3228,
-      "theta_zz": 1.0472,
       "cycles": [
         0,
         1,

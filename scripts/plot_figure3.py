@@ -16,20 +16,30 @@ colors = {
     "Noisy": "#D99800", "ZNE": "#C34DFF", "Mitigated": "#0040D6",
     "BP, chi=512": "#9F9F56", "BP, chi=700": "#50502B",
     "ORQA, wt=11,delta=1e-11": "#CECECB", "ORQA, wt=20,delta=1e-9": "#585853",
-    "Quantinuum mitigated": "#0070BA", "Quantinuum noisy": "#916500",
+    "Quantinuum H2 mitigated": "#0070BA", "Quantinuum H2 noisy": "#916500",
+    "Quantinuum Helios mitigated": "#3CBA27", "Quantinuum Helios noisy": "#95030C",
+}
+markers = {
+    "Noisy": "x", "ZNE": "o", "Mitigated": "s",
+    "Quantinuum H2 mitigated": "D", "Quantinuum H2 noisy": "v",
+    "Quantinuum Helios mitigated": "P", "Quantinuum Helios noisy": "^",
 }
 ax = axes[0]
 for name, row in data["magnetization"].items():
     if "yerr" in row:
-        ax.errorbar(row["xs"], row["ys"], yerr=row["yerr"], fmt="o-", ms=3, lw=1, capsize=2, label=name, color=colors.get(name))
+        ax.errorbar(
+            row["xs"], row["ys"], yerr=row["yerr"],
+            fmt=markers.get(name, "o"), linestyle="none", ms=4, capsize=2,
+            label=name, color=colors.get(name),
+        )
     else:
         ax.plot(row["xs"], row["ys"], lw=1.2, label=name, color=colors.get(name))
-ax.set(xlabel="Floquet cycle", ylabel="Magnetization", title="(a) 51-qubit dynamics")
+ax.set(xlabel="Floquet cycle", ylabel="Magnetization", title="(a) 51-qubit dynamics", xlim=(0, 31), ylim=(0.14, 0.54))
 ax.legend(fontsize=6, ncol=2)
 
 ax = axes[1]
 late = data["late_cycle"]
-palette = {"21q_sim": "#585853", "28q_sim": "#FB3440", "35q_sim": "#3CBA27", "51q_exp": "#0040D6", "74q_exp": "#D99800"}
+palette = {"28q_sim": "#FB3440", "35q_sim": "#3CBA27", "51q_exp": "#0040D6", "74q_exp": "#D99800"}
 for group in ("simulations", "experiments"):
     for name, points in late[group].items():
         x = [p["cycle"] for p in points]

@@ -1,50 +1,9 @@
 {
   "description": "Numerical data for Figure 1b. Figure 1a is a conceptual schematic and has no plotted dataset.",
-  "source_precision_notes": {
-    "pps": [
-      "Use runtime_n_tied_hours as the primary runtime estimate.",
-      "Order-of-magnitude extrapolated converged threshold.",
-      "Based on IBM 51-qubit heavy-hex patch, ZIIZ z=2 observable, weight cutoff 12.",
-      "runtime_powerlaw_hours is included in the source data but is not plotted because the source caveats say it is overhead-biased and underestimates at small t."
-    ],
-    "pps_estimate": [
-      "Rough model estimate of the runtime needed to reach 1.5% accuracy (same target as PEPS-BP and QESEM).",
-      "Sampled at integer cycles from a smooth 400-point curve (log-interpolated)."
-    ],
-    "tebd_estimate": [
-      "TEBD runtime for the 51-qubit patch (hours), A100 GPU (40 GB).",
-      "Cycles 1-6 are measured; later cycles are extrapolated (dashed, not a lower bound, so no arrows)."
-    ],
-    "statevector": [
-      "Plot only points within the practical Fugaku weak-scaling limit of about 47 qubits.",
-      "Draw a local terminal wall between the last feasible point (cycle 4, 40 qubits) and the first infeasible point (cycle 5, 51 qubits).",
-      "Memory-infeasible extrapolated points are retained in the JSON but are not plotted as valid runtime points."
-    ],
-    "pepsbp": [
-      "Measured runtimes are shown through cycle 13.",
-      "For cycles >13, show the supplied extrapolated data points and a smooth exponential guide-to-the-eye fit.",
-      "The extrapolated PEPS-BP segment is hypothetical and is drawn semi-transparently.",
-      "Input PEPS-BP runtimes are in seconds and are converted to hours for plotting."
-    ],
-    "unbiased_emp": [],
-    "heuristic_emp": []
-  },
   "methods": {
     "pps": {
-      "name": "PPS / Pauli propagation",
-      "label": "PPS, 51q, 0.5% criterion",
-      "plot": true,
-      "kind": "series",
       "x_key": "floquet_cycle",
       "y_key": "runtime_n_tied_hours",
-      "style": "line_with_markers",
-      "linestyle": "--",
-      "notes": [
-        "Use runtime_n_tied_hours as the primary runtime estimate.",
-        "Order-of-magnitude extrapolated converged threshold.",
-        "Based on IBM 51-qubit heavy-hex patch, ZIIZ z=2 observable, weight cutoff 12.",
-        "runtime_powerlaw_hours is included in the source data but is not plotted because the source caveats say it is overhead-biased and underestimates at small t."
-      ],
       "points": [
         {
           "floquet_cycle": 1,
@@ -169,15 +128,8 @@
       ]
     },
     "pps_estimate": {
-      "name": "Sparse Pauli Paths, 1.5% accuracy (rough estimate)",
-      "plot": true,
-      "kind": "series",
       "x_key": "floquet_cycle",
       "y_key": "runtime_hours",
-      "notes": [
-        "Rough model estimate of the runtime needed to reach 1.5% accuracy (same target as PEPS-BP and QESEM).",
-        "Sampled at integer cycles from a smooth 400-point curve (log-interpolated)."
-      ],
       "points": [
         {
           "floquet_cycle": 1,
@@ -302,15 +254,8 @@
       ]
     },
     "tebd_estimate": {
-      "name": "TEBD, 51q (estimate)",
-      "plot": true,
-      "kind": "series",
       "x_key": "floquet_cycle",
       "y_key": "runtime_hours",
-      "notes": [
-        "TEBD runtime for the 51-qubit patch (hours), A100 GPU (40 GB).",
-        "Cycles 1-6 are measured; later cycles are extrapolated (dashed, not a lower bound, so no arrows)."
-      ],
       "points": [
         {
           "floquet_cycle": 1,
@@ -435,114 +380,30 @@
       ]
     },
     "statevector": {
-      "name": "Statevector, Fugaku weak scaling",
-      "label": "Statevector, feasible \u22644 cycles",
-      "plot": true,
-      "kind": "series",
       "x_key": "floquet_cycle",
       "y_key": "runtime_hours",
-      "style": "feasible_with_failure_boundary",
-      "linestyle": ":",
-      "notes": [
-        "Plot only points within the practical Fugaku weak-scaling limit of about 47 qubits.",
-        "Draw a local terminal wall between the last feasible point (cycle 4, 40 qubits) and the first infeasible point (cycle 5, 51 qubits).",
-        "Memory-infeasible extrapolated points are retained in the JSON but are not plotted as valid runtime points."
-      ],
       "points": [
         {
           "floquet_cycle": 1,
-          "num_qubits": 4,
-          "runtime_hours": 0.000692371,
-          "feasible": true
+          "runtime_hours": 0.000692371
         },
         {
           "floquet_cycle": 2,
-          "num_qubits": 11,
-          "runtime_hours": 0.00430387,
-          "feasible": true
+          "runtime_hours": 0.00430387
         },
         {
           "floquet_cycle": 3,
-          "num_qubits": 25,
-          "runtime_hours": 0.0623635,
-          "feasible": true
+          "runtime_hours": 0.0623635
         },
         {
           "floquet_cycle": 4,
-          "num_qubits": 40,
-          "runtime_hours": 0.944506,
-          "feasible": true
-        },
-        {
-          "floquet_cycle": 5,
-          "num_qubits": 51,
-          "runtime_hours": 7.01499,
-          "feasible": false
-        },
-        {
-          "floquet_cycle": 6,
-          "num_qubits": 65,
-          "runtime_hours": 81.3183,
-          "feasible": false
-        },
-        {
-          "floquet_cycle": 7,
-          "num_qubits": 74,
-          "runtime_hours": 407.696,
-          "feasible": false
+          "runtime_hours": 0.944506
         }
-      ],
-      "failure_boundary_label": "Statevector memory limit (~47q)",
-      "failure_text": "memory\nlimit",
-      "failure_text_dx": 0.18,
-      "failure_text_y_factor": 1.65,
-      "failure_text_size": 9.0,
-      "failure_y_factor_low": 2.2,
-      "failure_y_factor_high": 3.1,
-      "failure_linewidth": 3.4,
-      "failure_marker_size": 900,
-      "failure_marker": "|",
-      "failure_color": "#2E2E2E",
-      "failure_alpha": 0.95
+      ]
     },
     "pepsbp": {
-      "name": "PEPS-BP",
-      "label": "PEPS-BP",
-      "display_label": "PEPS-BP",
-      "plot": true,
-      "kind": "series",
       "x_key": "floquet_cycle",
       "y_key": "runtime_hours",
-      "style": "measured_plus_extrapolated_fit",
-      "measured_until_cycle": 13,
-      "extrapolate_to_cycle": 30,
-      "fit_type": "exponential",
-      "fit_anchor_last": true,
-      "fit_start_cycle": 12,
-      "fit_end_cycle": 21,
-      "fit_window_label": "12\u201321",
-      "marker": "s",
-      "color": "#2A9D8F",
-      "linewidth": 2.1,
-      "measured_linestyle": "-",
-      "extrapolated_linestyle": [
-        0,
-        [
-          5,
-          3
-        ]
-      ],
-      "notes": [
-        "Measured runtimes are shown through cycle 13.",
-        "For cycles >13, show the supplied extrapolated data points and a smooth exponential guide-to-the-eye fit.",
-        "The extrapolated PEPS-BP segment is hypothetical and is drawn semi-transparently.",
-        "Input PEPS-BP runtimes are in seconds and are converted to hours for plotting."
-      ],
-      "measured_alpha": 1.0,
-      "extrapolated_alpha": 0.42,
-      "extrapolated_points_alpha": 0.28,
-      "extrapolated_points_markersize": 4.8,
-      "show_terminal_marker": true,
       "points": [
         {
           "floquet_cycle": 1,
@@ -619,67 +480,12 @@
         {
           "floquet_cycle": 19,
           "runtime_hours": 639.9692365575002
-        },
-        {
-          "floquet_cycle": 20,
-          "runtime_hours": 714.6170692866955
-        },
-        {
-          "floquet_cycle": 21,
-          "runtime_hours": 1618.801060683955
-        },
-        {
-          "floquet_cycle": 22,
-          "runtime_hours": 189911.3128730586
-        },
-        {
-          "floquet_cycle": 23,
-          "runtime_hours": 3606361.1453306046
-        },
-        {
-          "floquet_cycle": 24,
-          "runtime_hours": 460465.3466291729
-        },
-        {
-          "floquet_cycle": 25,
-          "runtime_hours": 159840.5722027269
-        },
-        {
-          "floquet_cycle": 26,
-          "runtime_hours": 422738.3776550381
-        },
-        {
-          "floquet_cycle": 27,
-          "runtime_hours": 778575193.2960852
-        },
-        {
-          "floquet_cycle": 28,
-          "runtime_hours": 2017973836.4312942
-        },
-        {
-          "floquet_cycle": 29,
-          "runtime_hours": 235890653.95165542
-        },
-        {
-          "floquet_cycle": 30,
-          "runtime_hours": 22276999.39751981
         }
       ]
     },
     "unbiased_emp": {
-      "name": "Unbiased QESEM empirical",
-      "display_label": "Unbiased QESEM (empirical mitigation, normalized to 2%)",
-      "plot": true,
-      "kind": "series",
       "x_key": "floquet_cycle",
       "y_key": "runtime_hours",
-      "regime": "measured",
-      "measured_linestyle": "None",
-      "marker": "o",
-      "markersize": 5.8,
-      "linewidth": 1.8,
-      "color": "#6F42C1",
-      "show_terminal_marker": false,
       "points": [
         {
           "floquet_cycle": 1,
@@ -748,19 +554,8 @@
       ]
     },
     "heuristic_emp": {
-      "name": "Heuristic QESEM empirical",
-      "display_label": "Heuristic QESEM (empirical mitigation, normalized to 0.5%)",
-      "plot": true,
-      "kind": "series",
       "x_key": "floquet_cycle",
       "y_key": "runtime_hours",
-      "regime": "measured",
-      "measured_linestyle": "None",
-      "marker": "D",
-      "markersize": 5.5,
-      "linewidth": 1.8,
-      "color": "#C03A8C",
-      "show_terminal_marker": false,
       "points": [
         {
           "floquet_cycle": 1,

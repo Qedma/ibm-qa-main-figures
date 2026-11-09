@@ -11,7 +11,7 @@ The original publication figures use a more elaborate layout and styling. The sc
 | Figure 1 | `data/figure1_runtime_frontier.json` | `scripts/plot_figure1.py` | Runtime-frontier panel (b) |
 | Figure 2 | `data/figure2_parameter_scan.json` | `scripts/plot_figure2.py` | Quantitative panels (b)-(i) |
 | Figure 3 | `data/figure3_quantum_dynamics.json` | `scripts/plot_figure3.py` | Panels (a)-(c) |
-| Figure 4 | `data/figure4_classical_methods.json` | `scripts/plot_figure4.py` | Panels (a)-(e) |
+| Figure 4 | `data/figure4_classical_methods.json` | `scripts/plot_figure4.py` | Panels (a)-(e), with separate 51q/74q TDVP and TEBD axes |
 
 Figure 1a and Figure 2a/2c are conceptual or circuit/system schematics rather than plots of numerical data, so they are not regenerated here.
 
@@ -41,6 +41,8 @@ python scripts/plot_figure3.py
 - Experimental uncertainties are one standard deviation.
 - State entanglement in the Figure 2 dynamics panels is normalized by 12, matching the manuscript plotting convention.
 - Figure 3 finite-size curves use the manuscript ansatz `A(N) = a exp(-sqrt(N)/xi) + c`.
+- Figure 3 separates the Quantinuum H2 and Helios measurements; the Helios series includes the cycle-21 point.
+- Figure 4 stores and plots the 51q and 74q TDVP/TEBD results separately. Only the three displayed bond dimensions and cycles through 30 are included.
 
 ## Provenance
 
