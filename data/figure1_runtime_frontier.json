@@ -56,74 +56,6 @@
         {
           "floquet_cycle": 13,
           "runtime_n_tied_hours": 6.17462777778
-        },
-        {
-          "floquet_cycle": 14,
-          "runtime_n_tied_hours": 6.40582583333
-        },
-        {
-          "floquet_cycle": 15,
-          "runtime_n_tied_hours": 6.59289305556
-        },
-        {
-          "floquet_cycle": 16,
-          "runtime_n_tied_hours": 6.75203277778
-        },
-        {
-          "floquet_cycle": 17,
-          "runtime_n_tied_hours": 6.89405388889
-        },
-        {
-          "floquet_cycle": 18,
-          "runtime_n_tied_hours": 7.02383666667
-        },
-        {
-          "floquet_cycle": 19,
-          "runtime_n_tied_hours": 7.14485361111
-        },
-        {
-          "floquet_cycle": 20,
-          "runtime_n_tied_hours": 7.25988111111
-        },
-        {
-          "floquet_cycle": 21,
-          "runtime_n_tied_hours": 7.37084333333
-        },
-        {
-          "floquet_cycle": 22,
-          "runtime_n_tied_hours": 7.47874333333
-        },
-        {
-          "floquet_cycle": 23,
-          "runtime_n_tied_hours": 7.58423111111
-        },
-        {
-          "floquet_cycle": 24,
-          "runtime_n_tied_hours": 7.68772888889
-        },
-        {
-          "floquet_cycle": 25,
-          "runtime_n_tied_hours": 7.78955166667
-        },
-        {
-          "floquet_cycle": 26,
-          "runtime_n_tied_hours": 7.8899725
-        },
-        {
-          "floquet_cycle": 27,
-          "runtime_n_tied_hours": 7.98918388889
-        },
-        {
-          "floquet_cycle": 28,
-          "runtime_n_tied_hours": 8.08738638889
-        },
-        {
-          "floquet_cycle": 29,
-          "runtime_n_tied_hours": 8.18468805556
-        },
-        {
-          "floquet_cycle": 30,
-          "runtime_n_tied_hours": 8.28120555556
         }
       ]
     },
@@ -480,6 +412,18 @@
         {
           "floquet_cycle": 19,
           "runtime_hours": 639.9692365575002
+        },
+        {
+          "floquet_cycle": 20,
+          "runtime_hours": 714.6170692866955
+        },
+        {
+          "floquet_cycle": 21,
+          "runtime_hours": 1618.801060683955
+        },
+        {
+          "floquet_cycle": 22,
+          "runtime_hours": 189911.3128730586
         }
       ]
     },
@@ -489,67 +433,67 @@
       "points": [
         {
           "floquet_cycle": 1,
-          "runtime_hours": 0.00016533333333333333
+          "runtime_hours": 0.000293925925925926
         },
         {
           "floquet_cycle": 2,
-          "runtime_hours": 0.00018664583333333331
+          "runtime_hours": 0.00033181481481481484
         },
         {
           "floquet_cycle": 3,
-          "runtime_hours": 0.0007033125000000002
+          "runtime_hours": 0.0012503333333333338
         },
         {
           "floquet_cycle": 4,
-          "runtime_hours": 0.003441645833333333
+          "runtime_hours": 0.006118481481481482
         },
         {
           "floquet_cycle": 5,
-          "runtime_hours": 0.008125
+          "runtime_hours": 0.014444444444444447
         },
         {
           "floquet_cycle": 6,
-          "runtime_hours": 0.009997062499999997
+          "runtime_hours": 0.017772555555555555
         },
         {
           "floquet_cycle": 7,
-          "runtime_hours": 0.012625466666666665
+          "runtime_hours": 0.022445274074074074
         },
         {
           "floquet_cycle": 8,
-          "runtime_hours": 0.008342399999999998
+          "runtime_hours": 0.014830933333333332
         },
         {
           "floquet_cycle": 9,
-          "runtime_hours": 0.04998
+          "runtime_hours": 0.08885333333333334
         },
         {
           "floquet_cycle": 10,
-          "runtime_hours": 0.07611333333333332
+          "runtime_hours": 0.1353125925925926
         },
         {
           "floquet_cycle": 11,
-          "runtime_hours": 0.1207466666666667
+          "runtime_hours": 0.21466074074074085
         },
         {
           "floquet_cycle": 12,
-          "runtime_hours": 0.18901333333333337
+          "runtime_hours": 0.3360237037037038
         },
         {
           "floquet_cycle": 13,
-          "runtime_hours": 0.3058125
+          "runtime_hours": 0.5436666666666667
         },
         {
           "floquet_cycle": 14,
-          "runtime_hours": 0.4533316666666666
+          "runtime_hours": 0.805922962962963
         },
         {
           "floquet_cycle": 15,
-          "runtime_hours": 0.94453125
+          "runtime_hours": 1.6791666666666671
         },
         {
           "floquet_cycle": 16,
-          "runtime_hours": 1.3492762500000002
+          "runtime_hours": 2.398713333333334
         }
       ]
     },
