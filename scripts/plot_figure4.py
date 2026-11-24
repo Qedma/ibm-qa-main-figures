@@ -15,7 +15,12 @@ grid = fig.add_gridspec(2, 12, height_ratios=(1.0, 1.05))
 top_axes = [fig.add_subplot(grid[0, start:start + 4]) for start in (0, 4, 8)]
 bottom_axes = [fig.add_subplot(grid[1, start:start + 3]) for start in (0, 3, 6, 9)]
 method_colors = ["#50502B", "#9F9F56", "#CDCDA2", "#D99800", "#FFBD22"]
-chi_colors = {"4096": "#50502B", "2048": "#9F9F56", "1024": "#D99800"}
+chi_colors = {
+    "8192": "#916500",
+    "4096": "#50502B",
+    "2048": "#9F9F56",
+    "1024": "#D99800",
+}
 
 
 def references(ax, system):
@@ -93,7 +98,9 @@ def format_bottom(ax, title, system, y_limits, show_legend=True):
 def tdvp_panel(ax, system, label):
     section = data["tdvp"][system]
     exact_references(ax)
-    for chi in ("4096", "2048", "1024"):
+    for chi in ("8192", "4096", "2048", "1024"):
+        if chi not in section:
+            continue
         row = section[chi]
         ax.plot(row["xs"], row["ys"], lw=1.2, color=chi_colors[chi], label=rf"TDVP, $\chi={chi}$")
     peps_reference(ax, section)

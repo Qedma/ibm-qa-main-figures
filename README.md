@@ -42,7 +42,7 @@ python scripts/plot_figure3.py
 - State entanglement in the Figure 2 dynamics panels is normalized by 12, matching the manuscript plotting convention.
 - Figure 3 finite-size curves use the manuscript ansatz `A(N) = a exp(-sqrt(N)/xi) + c`.
 - Figure 3 separates the displayed Quantinuum H2 and Helios measurements; cycles 21 and 23 are not part of the plotted dataset.
-- Figure 4 stores and plots the 51q and 74q TDVP/TEBD results separately. Only the three displayed bond dimensions and cycles through 30 are included.
+- Figure 4 stores and plots the 51q and 74q TDVP/TEBD results separately. The TDVP data include the displayed bond dimensions through $\chi=4096$ for 51q and $\chi=8192$ for 74q; all time-series data stop at cycle 30.
 
 ## Provenance
 
